@@ -1,0 +1,48 @@
+
+
+<h1>ngModel with textbox, checkbox and dropdown</h1>
+<br>
+<h3>ngModel:</h3>
+<p>The ngModel directive in Angular facilitates two-way data binding, connecting form input elements like textboxes, checkboxes, and dropdowns to properties in your component's TypeScript class.
+
+</p>
+
+<h3>TextBox</h3>
+
+<input type="text" [ngModel]="username">
+<p>Value in Component: {{ username }}</p>
+
+<br>
+<p>In this example, the input field will display the value of the username property. If the user types in the textbox, the username property in the component will not change. </p>
+
+
+
+
+
+ <h3>checkbox</h3>
+ <input type="checkbox" [ngModel]="isSubscribed"> Subscribed?
+<p>Status: {{ isSubscribed ? 'Yes' : 'No' }}</p>
+<p>For a checkbox, [ngModel] is used to set the initial checked state based on a component property. User clicks will not update the component's property. </p>
+<br>
+
+<h3>dropdown</h3>
+<select [ngModel]="selectedCity">
+  <option value="hyd">Hyderabad</option>
+  <option value="blr">Bangalore</option>
+  <option value="delhi">Delhi</option>
+</select>
+
+<p>Selected City: {{ selectedCity }}</p>
+<p>The dropdown will be initialized with "Banglore" selected. Choosing a different city from the list will not update the selectedCity property. </p>
+
+
+
+<br>
+
+<p>✅ Key Point:
+
+[ngModel] = one-way binding (component → view only).
+
+No change from view → component.</p>
+
+
