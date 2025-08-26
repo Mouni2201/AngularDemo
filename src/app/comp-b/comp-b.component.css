@@ -1,0 +1,31 @@
+.highlight {
+  background-color: yellow;
+  
+}
+
+
+.boldText { font-weight: bold; }
+
+/* .error { color: red; }
+.special { font-style: italic; } */
+
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.special {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+.inactive {
+  background-color: lightgray;
+  padding: 5px;
+}

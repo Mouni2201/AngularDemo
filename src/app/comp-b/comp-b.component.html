@@ -1,0 +1,48 @@
+<p>1. ngClass with String
+    <br>
+    If you have the class name stored in a variable.
+</p>
+
+<p [ngClass]="myClass">This is highlighted text</p>
+
+<br>
+<p> 2. ngClass with Array
+<br>
+If you want to apply multiple classes together.</p>
+
+<p [ngClass]="myClasses">This text is highlighted and bold</p>
+
+
+<br>
+<p> 3. ngClass with Object
+<br>
+If you want to apply classes conditionally.</p>
+<br>
+<!-- <p [ngClass]="{ 'error': isError, 'special': isSpecial }">
+  Conditional Styling
+</p> -->
+
+
+<p [ngClass]="{ 
+      'error': hasError, 
+      'special': isSpecial, 
+      'active': isActive 
+    }">
+    
+  This text will have classes applied based on conditions
+</p>
+
+<!-- Example 2: Array Syntax -->
+<p [ngClass]="[hasError ? 'error' : '', isSpecial ? 'special' : '']">
+  This text uses array syntax for ngClass
+</p>
+
+<!-- Example 3: String Syntax -->
+<p [ngClass]="isActive ? 'active' : 'inactive'">
+  This text switches between 'active' and 'inactive'
+</p>
+
+<!-- Button to change conditions -->
+<button (click)="toggleStates()">Toggle States</button>
+
+

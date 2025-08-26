@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class CompAComponent {
 
-  title= 'Angular Demo';
-  username = 'John'; 
+  // title= 'Angular Demo';
+  // username = 'John'; 
 
 
-   isSubscribed = true; 
+  //  isSubscribed = true; 
 
-  selectedCity = 'blr'; 
+  // selectedCity = 'blr'; 
 
   
 }
