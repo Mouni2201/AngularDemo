@@ -1,2 +1,12 @@
-<app-comp-a></app-comp-a>
-<app-comp-b></app-comp-b>
+<!-- <app-comp-a></app-comp-a>
+<app-comp-b></app-comp-b> -->
+
+
+
+<h2>Parent Component</h2>
+
+<!-- Step 4: Listen to child's event -->
+<app-child (studentSelected)="onStudentReceived($event)"></app-child>
+
+<!-- Display data received from child -->
+<p> Student Name received from Child: {{ receivedStudentName }}</p>

@@ -6,23 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp-b.component.css']
 })
 export class CompBComponent {
-myClass = 'highlight';
+// myClass = 'highlight';
   
- myClasses = ['highlight', 'boldText'];
+//  myClasses = ['highlight', 'boldText'];
 
 //  isError = true;
 //   isSpecial = true;
 
 // Conditions (flags) to control styling
-  hasError: boolean = true;
-  isSpecial: boolean = false;
-  isActive: boolean = true;
+  // hasError: boolean = true;
+  // isSpecial: boolean = false;
+  // isActive: boolean = true;
 
-  // Method to toggle flags (for demo)
-  toggleStates() {
-    this.hasError = !this.hasError;
-    this.isSpecial = !this.isSpecial;
-    this.isActive = !this.isActive;
-  }
+  // // Method to toggle flags (for demo)
+  // toggleStates() {
+  //   this.hasError = !this.hasError;
+  //   this.isSpecial = !this.isSpecial;
+  //   this.isActive = !this.isActive;
+  // }
 
 }

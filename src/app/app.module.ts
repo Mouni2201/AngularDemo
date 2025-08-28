@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CompAComponent } from './comp-a/comp-a.component';
 import { FormsModule } from '@angular/forms';
 import { CompBComponent } from './comp-b/comp-b.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CompAComponent,
-    CompBComponent
+    CompBComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
